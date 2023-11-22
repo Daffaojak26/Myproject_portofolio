@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#" class="navbar-logo">DAR<span>Production</span></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tugas">Tugas</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="ri-close-line" onclick="closemenu()"></i>
+          </ul>
+          <i class="ri-menu-line" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hello, I'm <span>Daffa Abdur Rozaq</span></h1>
+          <br />
+          <h2>Front End Development</h2>
+          <h5>
+            With knowledge in web development and design, <br />
+            I offer the best projects resulting in quality work.
+          </h5>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------about------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Img/Foto.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Frontend developer, I create web pages with UI / UX user
+              interface, I have years of experience and many clients are happy
+              with the projects carried out.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skill')">
+                Skill
+              </p>
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skill">
+              <ul>
+                <li><span>01.</span> HTML & CSS</li>
+                <li><span>02.</span> Javascript</li>
+                <li><span>03.</span> Bootstrap</li>
+                <li><span>04.</span> Adobe Photoshop</li>
+                <li><span>05.</span> Figma</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>01.</span> UI/UX Design</li>
+                <li><span>02.</span> Front End Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021 - 2023</span><br />Front End Development</li>
+                <li>
+                  <span>2022 - 2023</span><br />UI/UX Design Training at
+                  codingstudio
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------services------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="services-list">
+          <div>
+            <i class="ri-code-s-slash-line"></i>
+            <h2>Web Developer</h2>
+            <p>
+              Development of custom web pages. Using current technologies and
+              libraries of the labor field.
+            </p>
+          </div>
+          <div>
+            <i class="ri-crop-line"></i>
+            <h2>UI/UX Designer</h2>
+            <p>
+              I offer design of web interfaces and mobile applications, design
+              made in figma, adobe xd and sketch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------projects----------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">First Project</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Img/Screenshot (136).png" />
+            <div class="layer">
+              <h1>Web Pariwisata</h1>
+              <a href="https://github.com/Daffaojak26/UTS_Myproject.github.id"
+                ><i class="ri-external-link-line"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Img/Screenshot (138).png" />
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- ------------------kontak----------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Kontak Saya</h1>
+            <p><i class="ri-send-plane-fill"></i>daffaabdurrozaq@gmail.com</p>
+            <p><i class="ri-phone-fill"></i>0895338850507</p>
+            <div class="sosial-icons">
+              <a href="https://www.facebook.com/daffa.ojak?locale=id_ID"
+                ><i class="ri-facebook-circle-fill"></i
+              ></a>
+              <a href="https://www.instagram.com/daffaar_93/"
+                ><i class="ri-instagram-line"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/daffa-abdur-rozaq-341933255/"
+                ><i class="ri-linkedin-box-fill"></i
+              ></a>
+            </div>
+            <a href="Img/Cv Saya.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Nama" placeholder="Nama" required />
+              <input type="text" name="Email" placeholder="Email" required />
+              <textarea name="Pesan" rows="6" placeholder="Pesan"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © DAR26. Production All rights reserved</p>
+        By
+        <h1>Daffa Abdur Rozaq</h1>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
